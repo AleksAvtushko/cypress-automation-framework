@@ -1,0 +1,44 @@
+{
+    "name": "cypress-automation-framework",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "format:code": "prettier --write \"**/.js,.ts\" ",
+        "lint": "eslint ./**/*.{ts,json}",
+        "lint:fix": "eslint ./**/*.{ts,json} --quiet --fix",
+        "prepare": "husky install"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AleksAvtushko/cypress-automation-framework.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "lint-staged": {
+        "*.ts": [
+            "npm run lint"
+        ]
+    },
+    "bugs": {
+        "url": "https://github.com/AleksAvtushko/cypress-automation-framework/issues"
+    },
+    "homepage": "https://github.com/AleksAvtushko/cypress-automation-framework#readme",
+    "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.47.0",
+        "@typescript-eslint/parser": "^5.47.0",
+        "eslint": "8.22.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "husky": "^8.0.2",
+        "lint-staged": "^13.1.0",
+        "prettier": "^2.8.1",
+        "typescript": "^4.9.4"
+    },
+    "devDependencies": {
+        "cypress": "^12.2.0",
+        "husky": "^8.0.0"
+    }
+}
