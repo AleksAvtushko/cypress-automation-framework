@@ -9,3 +9,5 @@ node_modules/
 /allure-report
 app.log
 /playwright-report
+/cypress/screenshots/test.cy.ts/
+/cypress/videos/
