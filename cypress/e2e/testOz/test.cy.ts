@@ -1,3 +1,6 @@
+import { logger } from "../../../configLog4js";
+import log4js from "log4js";
+
 describe("visit oz.by site", () => {
     beforeEach(() => {
         cy.visit("https://oz.by/");
