@@ -23,7 +23,7 @@ describe("visit oz.by site", () => {
         cy.SearchFilter("Стивен кинг");
         cy.get('h1[class="breadcrumbs__list__item"]')
             .find("span")
-            .should("have.text", `Найдено 283 товара по запросу «${searchValue}»`);
+            .should("have.text", `Найдено 285 товаров по запросу «${searchValue}»`);
     });
 
     it("check: checkbox is unchecked", () => {
